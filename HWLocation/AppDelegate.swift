@@ -8,6 +8,8 @@
 
 import UIKit
 
+var taggedLocations = [Location]()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

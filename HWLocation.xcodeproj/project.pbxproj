@@ -13,6 +13,10 @@
 		3F7477F61B759850005BC473 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7477F41B759850005BC473 /* LaunchScreen.xib */; };
 		3F7478021B759850005BC473 /* HWLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7478011B759850005BC473 /* HWLocationTests.swift */; };
 		3F74780C1B7598B1005BC473 /* GetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74780B1B7598B1005BC473 /* GetLocationViewController.swift */; };
+		3FBB8E311B76B05B00192D12 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB8E301B76B05B00192D12 /* LocationDetailViewController.swift */; };
+		3FBB8E331B76C28400192D12 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB8E321B76C28400192D12 /* Location.swift */; };
+		3FBB8E351B76C63D00192D12 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB8E341B76C63D00192D12 /* MapViewController.swift */; };
+		3FBB8E371B76C64B00192D12 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBB8E361B76C64B00192D12 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		3F7478001B759850005BC473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7478011B759850005BC473 /* HWLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWLocationTests.swift; sourceTree = "<group>"; };
 		3F74780B1B7598B1005BC473 /* GetLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLocationViewController.swift; sourceTree = "<group>"; };
+		3FBB8E301B76B05B00192D12 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		3FBB8E321B76C28400192D12 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3FBB8E341B76C63D00192D12 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3FBB8E361B76C64B00192D12 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBB8E371B76C64B00192D12 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +68,7 @@
 		3F7477DD1B759850005BC473 = {
 			isa = PBXGroup;
 			children = (
+				3FBB8E361B76C64B00192D12 /* MapKit.framework */,
 				3F7477E81B759850005BC473 /* HWLocation */,
 				3F7477FE1B759850005BC473 /* HWLocationTests */,
 				3F7477E71B759850005BC473 /* Products */,
@@ -78,8 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				3F7477EF1B759850005BC473 /* Main.storyboard */,
-				3F7477F41B759850005BC473 /* LaunchScreen.xib */,
+				3FBB8E321B76C28400192D12 /* Location.swift */,
 				3F74780B1B7598B1005BC473 /* GetLocationViewController.swift */,
+				3FBB8E301B76B05B00192D12 /* LocationDetailViewController.swift */,
+				3FBB8E341B76C63D00192D12 /* MapViewController.swift */,
 				3F7477E91B759850005BC473 /* Supporting Files */,
 			);
 			path = HWLocation;
@@ -88,6 +100,7 @@
 		3F7477E91B759850005BC473 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F7477F41B759850005BC473 /* LaunchScreen.xib */,
 				3F7477EA1B759850005BC473 /* Info.plist */,
 				3F7477F21B759850005BC473 /* Images.xcassets */,
 				3F7477EB1B759850005BC473 /* AppDelegate.swift */,
@@ -213,6 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F74780C1B7598B1005BC473 /* GetLocationViewController.swift in Sources */,
+				3FBB8E311B76B05B00192D12 /* LocationDetailViewController.swift in Sources */,
+				3FBB8E331B76C28400192D12 /* Location.swift in Sources */,
+				3FBB8E351B76C63D00192D12 /* MapViewController.swift in Sources */,
 				3F7477EC1B759850005BC473 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +425,7 @@
 				3F7478071B759850005BC473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F7478081B759850005BC473 /* Build configuration list for PBXNativeTarget "HWLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				3F74780A1B759850005BC473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

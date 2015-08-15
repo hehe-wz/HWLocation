@@ -207,4 +207,23 @@ class GetLocationViewController: UIViewController, CLLocationManagerDelegate {
       configureGetButton()
     }
   }
+  
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "tagLocation" {
+      let navigationController = segue.destinationViewController as! UINavigationController
+      let tableViewController = navigationController.topViewController as! LocationDetailViewController
+      
+      tableViewController.latitude = location!.coordinate.latitude
+      tableViewController.longitude = location!.coordinate.longitude
+      tableViewController.address = addressLabel.text
+      
+      
+//      let navigationController = segue.destinationViewController as! UINavigationController
+//      let controller = navigationController.topViewController as! LocationDetailsViewController
+//      
+//      controller.coordinate = location!.coordinate
+//      controller.placemark = placemark
+    }
+  }
 }
